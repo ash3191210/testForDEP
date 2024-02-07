@@ -29,6 +29,7 @@ app.get('/set',async(req,res)=>{
 
              res.send(`@ ${req.query.username} created successfully!!!!!!`)
          }
+         else return res.send("oh nothing is there")
      } catch (error) {
         res.send("user is not created")
      }
